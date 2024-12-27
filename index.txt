@@ -15,7 +15,7 @@ Resume
 Portfolio
 About me
 Hello! I am a second-year Computer Science and Engineering (CSE) student at KLE Technological University, India. Passionate about technology and innovation, I thrive on solving challenging problems and exploring new ideas that can make a difference in the world.
-What i'm doing
+What I'm doing
 C Programming
 C++
 SQL
