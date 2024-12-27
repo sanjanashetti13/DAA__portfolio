@@ -1,95 +1,11 @@
 vCard - Personal Portfolio
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Roboto', sans-serif;
-}
-body {
-display: flex;
-height: 100vh;
-}
-.sidebar {
-background: #4A90E2;
-color: white;
-width: 250px;
-padding: 20px;
-}
-.sidebar-info {
-text-align: center;
-}
-.avatar-box img {
-border-radius: 50%;
-margin: 10px 0;
-}
-.info-content {
-margin: 10px 0;
-}
-.info_more-btn {
-background: #fff;
-color: #4A90E2;
-border: none;
-padding: 10px 15px;
-border-radius: 5px;
-cursor: pointer;
-}
-.contacts-list {
-list-style-type: none;
-padding: 0;
-margin-top: 20px;
-}
-.contact-item {
-display: flex;
-align-items: center;
-margin: 10px 0;
-}
-.icon-box {
-margin-right: 10px;
-}
-.main-content {
-flex: 1;
-padding: 20px;
-}
-.navbar {
-background: #f7f7f7;
-padding: 10px;
-margin-bottom: 20px;
-}
-.navbar-list {
-list-style-type: none;
-display: flex;
-justify-content: space-around;
-}
-.navbar-item {
-cursor: pointer;
-}
-.article-title {
-font-size: 24px;
-margin-bottom: 10px;
-}
-.timeline {
-margin: 20px 0;
-}
-.timeline-list {
-list-style-type: none;
-}
-.project-list {
-list-style-type: none;
-padding: 0;
-}
-.project-item {
-background: #e7e7e7;
-margin: 10px 0;
-padding: 15px;
-border-radius: 5px;
-}
 Sanjana Shetti
 II CSE STUDENT
 Show Contacts
 Email
 sanjanashetti13@gmail.com
 Phone
-+91 9538840123
++91 95388 40123
 Birthday
 June 13, 2005
 Location
@@ -97,34 +13,26 @@ Hubli, Karnataka, India
 About
 Resume
 Portfolio
-About me
+Blog
+Contact
+About Me
 Hello! I am a second-year Computer Science and Engineering (CSE) student at KLE Technological University, India. I am passionate about technology and innovation, and I thrive on solving challenging problems.
-What I'm doing
+Current Focus
 C Programming
 C++
 SQL
-Resume
 Education
 Chinmaya English Primary School
-2011 — 2021
+Duration: 2011 — 2021
 Pursued primary and secondary education emphasizing academic excellence and moral values.
 VIDYANIKETAN PU SCIENCE COLLEGE
-2021 — 2023
+Duration: 2021 — 2023
 Commenced pre-university education with advanced knowledge in Science, Mathematics, and Communication.
 KLE TECHNOLOGICAL UNIVERSITY
-2023 — 2027
+Duration: 2023 — 2027
 Currently pursuing a degree in Computer Science.
-My skills
-Graphic Design - 80%
-Photography - 70%
-Swimming - 90%
-Public speaking - 50%
-Portfolio
-Finance
-Web development
-Orizon
-Web development
-Fundo
-Web design
-Brawlhalla
-Applications
+Hobbies
+Graphic Design
+Photography
+Swimming
+Public Speaking
