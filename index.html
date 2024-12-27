@@ -2,576 +2,284 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vCard - Personal Portfolio</title>
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            background: #4A90E2;
+            color: white;
+            width: 250px;
+            padding: 20px;
+        }
+
+        .sidebar-info {
+            text-align: center;
+        }
+
+        .avatar-box img {
+            border-radius: 50%;
+            margin: 10px 0;
+        }
+
+        .info-content {
+            margin: 10px 0;
+        }
+
+        .info_more-btn {
+            background: #fff;
+            color: #4A90E2;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contacts-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .icon-box {
+            margin-right: 10px;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .navbar {
+            background: #f7f7f7;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .navbar-list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .navbar-item {
+            cursor: pointer;
+        }
+
+        .article-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .timeline {
+            margin: 20px 0;
+        }
+
+        .timeline-list {
+            list-style-type: none;
+        }
+
+        .project-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .project-item {
+            background: #e7e7e7;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
+    <main>
+        <aside class="sidebar">
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="https://pngtree.com/freepng/business-girl-avatar-cartoon_13810300.html" alt="Sanjana Shetti" width="80">
+                    <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/woman-in-tuxedo_1f935-200d-2640-fe0f.png" alt="Woman in Formal Emoji" width="80">
+                </figure>
 
-  <main>
+                <div class="info-content">
+                    <h1 class="name">Sanjana Shetti</h1>
+                    <p class="title">II CSE STUDENT</p>
+                </div>
 
-    <!--
-      - #SIDEBAR
-    -->
+                <button class="info_more-btn">
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
 
-    <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info_more">
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:sanjanashetti13@gmail.com" class="contact-link">sanjanashetti13@gmail.com</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+                            <a href="tel:+919538840123" class="contact-link">+91 9538840123</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+                            <time datetime="2005-06-13">June 13, 2005</time>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Hubli, Karnataka, India</address>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </aside>
 
-      <div class="sidebar-info">
+        <div class="main-content">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active">About</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link">Resume</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link">Portfolio</button>
+                    </li>
+                </ul>
+            </nav>
 
-        <figure class="avatar-box">
-          <img src="https://pngtree.com/freepng/business-girl-avatar-cartoon_13810300.html" alt="Sanjana Shetti" width="80">
-          <!-- Added emoji image -->
-          <img src="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/woman-in-tuxedo_1f935-200d-2640-fe0f.png" alt="Woman in Formal Emoji" width="80">
-        </figure>
+            <article class="about active">
+                <header>
+                    <h2 class="article-title">About me</h2>
+                </header>
+                <section class="about-text">
+                    <p>Hello! I am a second-year Computer Science and Engineering (CSE) student at KLE Technological University, India. I am passionate about technology and innovation, and I thrive on solving challenging problems.</p>
+                </section>
+                <section class="service">
+                    <h3 class="service-title">What I'm doing</h3>
+                    <ul class="service-list">
+                        <li>C Programming</li>
+                        <li>C++</li>
+                        <li>SQL</li>
+                    </ul>
+                </section>
+            </article>
 
-        <div class="info-content">
-          <h1 class="name" title="Sanjana Shetti">Sanjana Shetti</h1>
+            <article class="resume" data-page="resume">
+                <header>
+                    <h2 class="article-title">Resume</h2>
+                </header>
+                <section class="timeline">
+                    <h3>Education</h3>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4>Chinmaya English Primary School</h4>
+                            <span>2011 — 2021</span>
+                            <p>Pursued primary and secondary education emphasizing academic excellence and moral values.</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4>VIDYANIKETAN PU SCIENCE COLLEGE</h4>
+                            <span>2021 — 2023</span>
+                            <p>Commenced pre-university education with advanced knowledge in Science, Mathematics, and Communication.</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4>KLE TECHNOLOGICAL UNIVERSITY</h4>
+                            <span>2023 — 2027</span>
+                            <p>Currently pursuing a degree in Computer Science.</p>
+                        </li>
+                    </ol>
+                </section>
+                <section class="hobbies">
+                    <h3>My skills</h3>
+                    <ul class="skills-list">
+                        <li>Graphic Design - 80%</li>
+                        <li>Photography - 70%</li>
+                        <li>Swimming - 90%</li>
+                        <li>Public speaking - 50%</li>
+                    </ul>
+                </section>
+            </article>
 
-          <p class="title">II CSE STUDENT</p>
+            <article class="portfolio" data-page="portfolio">
+                <header>
+                    <h2 class="article-title">Portfolio</h2>
+                </header>
+                <section class="projects">
+                    <ul class="project-list">
+                        <li class="project-item">
+                            <h3>Finance</h3>
+                            <p>Web development</p>
+                        </li>
+                        <li class="project-item">
+                            <h3>Orizon</h3>
+                            <p>Web development</p>
+                        </li>
+                        <li class="project-item">
+                            <h3>Fundo</h3>
+                            <p>Web design</p>
+                        </li>
+                        <li class="project-item">
+                            <h3>Brawlhalla</h3>
+                            <p>Applications</p>
+                        </li>
+                    </ul>
+                </section>
+            </article>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:sanjanashetti13@gmail.com" class="contact-link">sanjanashetti13@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="phone:+919538840123" class="contact-link">+91 9538840123</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2005-06-13">June 13, 2005</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Hubli, Karnataka, India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-      </div>
-
-    </aside>
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>Hello! I am a second-year Computer Science and Engineering (CSE) student at KLE Technological University, India. Passionate about technology and innovation, I thrive on solving challenging problems and exploring new ideas that can make a difference in the world.</p>
-        </section>
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What I'm doing</h3>
-
-          <ul class="service-list">
-            <li>C Programming</li>
-            <li>C++</li>
-            <li>SQL</li>
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Chinmaya English Primary School</h4>
-
-              <span>2011 — 2021</span>
-
-              <p class="timeline-text">
-                I pursued my primary and secondary education at this esteemed institution, <br>
-                which emphasized academic excellence alongside the inculcation of moral values <br>
-                and cultural traditions, fostering my development into an ideal individual.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">VIDYANIKETAN PU SCIENCE COLLEGE</h4>
-
-              <span>2021 — 2023</span>
-
-              <p class="timeline-text">
-                Commenced pre-university education, acquiring advanced knowledge in Science, Mathematics, and Communication. <br>
-                Successfully completed the course with an outstanding score of 96%.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">KLE TECHNOLOGICAL UNIVERSITY</h4>
-
-              <span>2023 — 2027</span>
-
-              <p class="timeline-text">
-                Currently pursuing the second year of an Engineering degree in Computer Science.              
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="Hobbies">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic Design</h5>
-                <data value="80">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Photography</h5>
-                <data value="70">95%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Swimming</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Public speaking</h5>
-                <data value="50">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
