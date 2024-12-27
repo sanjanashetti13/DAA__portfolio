@@ -14,7 +14,7 @@ About
 Resume
 Portfolio
 About me
-Hello! I am a second-year Computer Science and Engineering (CSE) student at KLE Technological University, India.Passionate about technology and innovation, I thrive on solving challenging problems and exploring new ideas that can make a difference in the world.
+Hello! I am a second-year Computer Science and Engineering (CSE) student at KLE Technological University, India. Passionate about technology and innovation, I thrive on solving challenging problems and exploring new ideas that can make a difference in the world.
 What i'm doing
 C Programming
 C++
@@ -70,31 +70,3 @@ Task Manager
 Applications
 Arrival
 Web development
-Blog
-Design
-Fab 23, 2022
-Design conferences in 2022
-Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-Design
-Fab 23, 2022
-Best fonts every designer
-Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-Design
-Fab 23, 2022
-Design digest #80
-Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-Design
-Fab 23, 2022
-UI interactions of the week
-Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-Design
-Fab 23, 2022
-The forgotten art of spacing
-Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Design
-Fab 23, 2022
-Design digest #79
-Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-Contact
-Contact Form
-Send Message
