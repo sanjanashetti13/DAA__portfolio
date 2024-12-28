@@ -1,1201 +1,1372 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Traveler template</title>
+    <meta property="og:title" content="Traveler template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 300vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Karla;
+        font-size: 16px;
+      }
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background: var(--dl-color-gray-white);
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+        fill: var(--dl-color-gray-black);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
-
-          <p class="title">Web developer</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+      <div class="home-container1">
+        <section class="home-hero">
+          <div class="home-main1">
+            <div class="home-video1">
+              <video
+                src=""
+                poster="public/Videos/hero-cover1-1500h.png"
+                class="home-video2"
+              ></video>
+              <div class="home-tint1"></div>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+            <div class="home-content10">
+              <header class="home-header10">
+                <header data-thq="thq-navbar" class="home-navbar">
+                  <img alt="logo" src="public/logo.svg" class="home-logo1" />
+                  <div data-thq="thq-burger-menu" class="home-menu">
+                    <div class="home-links1">
+                      <a href="#features" class="home-link10 link">Features</a>
+                      <span class="link">How it works</span>
+                      <span class="link">Prices</span>
+                      <a href="#find" class="home-link11 link">Contact</a>
+                    </div>
+                    <button class="home-hamburger button">
+                      <svg viewBox="0 0 1024 1024" class="home-icon10">
+                        <path
+                          d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+                    <div
+                      data-thq="thq-mobile-menu-nav"
+                      data-role="Nav"
+                      class="home-nav1"
+                    >
+                      <div class="home-container2">
+                        <img
+                          alt="logo"
+                          src="public/logo.svg"
+                          class="home-logo2"
+                        />
+                        <div data-thq="thq-close-menu" class="home-menu-close">
+                          <svg viewBox="0 0 1024 1024" class="home-icon12">
+                            <path
+                              d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <nav
+                        data-thq="thq-mobile-menu-nav-links"
+                        data-role="Nav"
+                        class="home-nav2"
+                      >
+                        <span class="home-text12">About</span>
+                        <span class="home-text13">Features</span>
+                        <span class="home-text14">Pricing</span>
+                        <span class="home-text15">Team</span>
+                        <span class="home-text16">Blog</span>
+                      </nav>
+                      <div class="home-container3">
+                        <button class="home-login button">Login</button>
+                        <button class="button">Register</button>
+                      </div>
+                    </div>
+                    <div class="home-icon-group">
+                      <svg
+                        viewBox="0 0 950.8571428571428 1024"
+                        class="home-icon14"
+                      >
+                        <path
+                          d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 877.7142857142857 1024"
+                        class="home-icon16"
+                      >
+                        <path
+                          d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                        ></path></svg
+                      ><svg
+                        viewBox="0 0 602.2582857142856 1024"
+                        class="home-icon18"
+                      >
+                        <path
+                          d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </header>
+              </header>
+              <div class="home-center">
+                <div class="home-heading10">
+                  <h1 class="home-header11">See the world like a local</h1>
+                  <p class="home-caption10">
+                    Find a local guide consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt.
+                  </p>
+                </div>
+                <div class="home-border">
+                  <div class="home-filter">
+                    <img
+                      alt="image"
+                      src="public/Icons/location.svg"
+                      class="home-image1"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Destination"
+                      class="home-textinput1 input"
+                    />
+                    <input
+                      type="date"
+                      placeholder="Date"
+                      class="home-textinput2 input"
+                    />
+                    <input
+                      type="number"
+                      placeholder="Group size"
+                      class="home-textinput3 input"
+                    />
+                    <div class="home-search">
+                      <img
+                        alt="image"
+                        src="public/Icons/search.svg"
+                        class="home-icon20"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+          </div>
+          <div id="features" class="home-feaures">
+            <div class="home-content11">
+              <feature-wrapper class="feature-wrapper">
+                <!--Feature component-->
+                <div class="feature-feature">
+                  <div class="feature-heading">
+                    <img
+                      alt="image"
+                      src="public/Icons/thumbs-up.svg"
+                      class="feature-icon"
+                    />
+                    <h3 class="feature-header">
+                      <span>Hand Picked Guides</span>
+                    </h3>
+                  </div>
+                  <p class="feature-description">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </span>
+                  </p>
+                </div>
+              </feature-wrapper>
+              <feature-wrapper-8g8j class="feature-wrapper-8g8j">
+                <!--Feature component-->
+                <div class="feature-feature1">
+                  <div class="feature-heading1">
+                    <img
+                      alt="image"
+                      src="public/Icons/headset.svg"
+                      class="feature-icon1"
+                    />
+                    <h3 class="feature-header1"><span>24/7 Support</span></h3>
+                  </div>
+                  <p class="feature-description1">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </span>
+                  </p>
+                </div>
+              </feature-wrapper-8g8j>
+              <feature-wrapper-m2sh class="feature-wrapper-m2sh">
+                <!--Feature component-->
+                <div class="feature-feature2">
+                  <div class="feature-heading2">
+                    <img
+                      alt="image"
+                      src="public/Icons/person.svg"
+                      class="feature-icon2"
+                    />
+                    <h3 class="feature-header2"><span>Private Tours</span></h3>
+                  </div>
+                  <p class="feature-description2">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </span>
+                  </p>
+                </div>
+              </feature-wrapper-m2sh>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+          </div>
+        </section>
+        <section id="tours" class="home-quick-view">
+          <div class="home-main2">
+            <div class="home-heading11">
+              <h2 class="home-header12">See the world like a local</h2>
+              <p class="home-caption11">
+                Lorem ipsum dolor sit consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
             </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
+            <div class="home-sorting">
+              <button class="home-option-primary button">All</button>
+              <button class="button-option button">Popular</button>
+              <button class="button-option button">Featured</button>
+              <button class="button-option button">Trending</button>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Sacramento, California, USA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+          </div>
+          <div class="home-offers">
+            <a href="index.html">
+              <div class="home-offer-container1">
+                <offer-wrapper class="offer-wrapper">
+                  <!--Offer component-->
+                  <div class="offer-offer">
+                    <img
+                      alt="image"
+                      src="public/Offers/offers-11-1500w.png"
+                      class="offer-image"
+                    />
+                    <div class="offer-content">
+                      <div class="offer-details">
+                        <span class="offer-text1">
+                          <span>Crete, Greece</span>
+                        </span>
+                        <span class="offer-text2">
+                          <span>3 Local guides</span>
+                        </span>
+                      </div>
+                      <span class="offer-text3">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </offer-wrapper>
+              </div>
             </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="index.html">
+              <div class="home-offer-container2">
+                <offer-wrapper-e7nn class="offer-wrapper-e7nn">
+                  <!--Offer component-->
+                  <div class="offer-offer1">
+                    <img
+                      alt="image"
+                      src="public/Offers/offers-21-1500w.png"
+                      class="offer-image1"
+                    />
+                    <div class="offer-content1">
+                      <div class="offer-details1">
+                        <span class="offer-text4">
+                          <span>Barcelona, Spain</span>
+                        </span>
+                        <span class="offer-text5">
+                          <span>54 Local guides</span>
+                        </span>
+                      </div>
+                      <span class="offer-text6">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </offer-wrapper-e7nn>
+              </div>
             </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a href="index.html">
+              <div class="home-offer-container3">
+                <offer-wrapper-lpap class="offer-wrapper-lpap">
+                  <!--Offer component-->
+                  <div class="offer-offer2">
+                    <img
+                      alt="image"
+                      src="public/Offers/offers-31-1500w.png"
+                      class="offer-image2"
+                    />
+                    <div class="offer-content2">
+                      <div class="offer-details2">
+                        <span class="offer-text7">
+                          <span>Machu Picchu, Peru</span>
+                        </span>
+                        <span class="offer-text8">
+                          <span>34 Local Guides</span>
+                        </span>
+                      </div>
+                      <span class="offer-text9">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </offer-wrapper-lpap>
+              </div>
             </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            <a href="index.html">
+              <div class="home-offer-container4">
+                <offer-wrapper-j16d class="offer-wrapper-j16d">
+                  <!--Offer component-->
+                  <div class="offer-offer3">
+                    <img
+                      alt="image"
+                      src="public/Offers/offers-41-1500w.png"
+                      class="offer-image3"
+                    />
+                    <div class="offer-content3">
+                      <div class="offer-details3">
+                        <span class="offer-text10">
+                          <span>Doha, Quatar</span>
+                        </span>
+                        <span class="offer-text11">
+                          <span>1 Local guide</span>
+                        </span>
+                      </div>
+                      <span class="offer-text12">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </offer-wrapper-j16d>
+              </div>
+            </a>
+            <a href="index.html">
+              <div class="home-offer-container5">
+                <offer-wrapper-iazk class="offer-wrapper-iazk">
+                  <!--Offer component-->
+                  <div class="offer-offer4">
+                    <img
+                      alt="image"
+                      src="public/Offers/offers-51-1500w.png"
+                      class="offer-image4"
+                    />
+                    <div class="offer-content4">
+                      <div class="offer-details4">
+                        <span class="offer-text13">
+                          <span>Rhodes, Greece</span>
+                        </span>
+                        <span class="offer-text14">
+                          <span>6 Local guides</span>
+                        </span>
+                      </div>
+                      <span class="offer-text15">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </offer-wrapper-iazk>
+              </div>
+            </a>
+            <a href="index.html">
+              <div class="home-offer-container6">
+                <offer-wrapper-x8d1 class="offer-wrapper-x8d1">
+                  <!--Offer component-->
+                  <div class="offer-offer5">
+                    <img
+                      alt="image"
+                      src="public/Offers/offers-61-1500w.png"
+                      class="offer-image5"
+                    />
+                    <div class="offer-content5">
+                      <div class="offer-details5">
+                        <span class="offer-text16">
+                          <span>New York, USA</span>
+                        </span>
+                        <span class="offer-text17">
+                          <span>132 Local guides</span>
+                        </span>
+                      </div>
+                      <span class="offer-text18">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </offer-wrapper-x8d1>
+              </div>
+            </a>
+            <a href="index.html">
+              <div class="home-offer-container7">
+                <offer-wrapper-70xy class="offer-wrapper-70xy">
+                  <!--Offer component-->
+                  <div class="offer-offer6">
+                    <img
+                      alt="image"
+                      src="public/Offers/offers-71-1500w.png"
+                      class="offer-image6"
+                    />
+                    <div class="offer-content6">
+                      <div class="offer-details6">
+                        <span class="offer-text19">
+                          <span>Doha, Quatar</span>
+                        </span>
+                        <span class="offer-text20">
+                          <span>1 Local guide</span>
+                        </span>
+                      </div>
+                      <span class="offer-text21">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </offer-wrapper-70xy>
+              </div>
+            </a>
+            <a href="index.html">
+              <div class="home-offer-container8">
+                <offer-wrapper-2ecg class="offer-wrapper-2ecg">
+                  <!--Offer component-->
+                  <div class="offer-offer7">
+                    <img
+                      alt="image"
+                      src="public/Offers/offers-81-1500w.png"
+                      class="offer-image7"
+                    />
+                    <div class="offer-content7">
+                      <div class="offer-details7">
+                        <span class="offer-text22">
+                          <span>Rhodes, Greece</span>
+                        </span>
+                        <span class="offer-text23">
+                          <span>6 Local guides</span>
+                        </span>
+                      </div>
+                      <span class="offer-text24">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </offer-wrapper-2ecg>
+              </div>
+            </a>
+            <a href="index.html">
+              <div class="home-offer-container9">
+                <offer-wrapper-919c class="offer-wrapper-919c">
+                  <!--Offer component-->
+                  <div class="offer-offer8">
+                    <img
+                      alt="image"
+                      src="public/Offers/offers-91-1500w.png"
+                      class="offer-image8"
+                    />
+                    <div class="offer-content8">
+                      <div class="offer-details8">
+                        <span class="offer-text25">
+                          <span>New York, USA</span>
+                        </span>
+                        <span class="offer-text26">
+                          <span>132 Local guides</span>
+                        </span>
+                      </div>
+                      <span class="offer-text27">
+                        <span>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt.
+                        </span>
+                      </span>
+                    </div>
+                  </div>
+                </offer-wrapper-919c>
+              </div>
+            </a>
+          </div>
+          <div class="home-pagination">
+            <button class="home-previous1 button-option button">
+              <svg viewBox="0 0 1024 1024" class="home-icon21">
+                <path d="M658 708l-60 60-256-256 256-256 60 60-196 196z"></path>
+              </svg>
+              <span class="home-text17">Previous</span>
+            </button>
+            <div class="home-pages">
+              <div class="home-primary">
+                <div class="home-number-current page-current page">
+                  <span class="home-text18">1</span>
+                </div>
+                <div class="page"><span class="home-text19">2</span></div>
+                <div class="page home-number2">
+                  <span class="home-text20">3</span>
+                </div>
+              </div>
+              <img alt="image" src="public/Icons/more.svg" class="home-more" />
+              <div class="page"><span class="home-text21">12</span></div>
+            </div>
+            <button class="home-next1 button-option button">
+              <span class="home-text22">Next</span>
+              <svg viewBox="0 0 1024 1024" class="home-icon23">
+                <path
+                  d="M426 256l256 256-256 256-60-60 196-196-196-196z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </section>
+        <section class="home-testimonials">
+          <div class="home-content12">
+            <div class="home-heading12">
+              <span class="home-title">Customer testimonial</span>
+              <p class="home-quote">
+                “We’ve used Traveler to lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.”
+              </p>
+            </div>
+            <div class="home-details">
+              <div class="home-author">
+                <img
+                  alt="image"
+                  src="public/Avatar/quote-200h.png"
+                  class="home-avatar"
+                />
+                <span class="home-name">Michael McDonald</span>
+              </div>
+              <div class="home-controls">
+                <div class="page"><span class="home-text23">&lt;</span></div>
+                <div class="home-next2 page">
+                  <span class="home-text24">&lt;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works" class="home-highlights">
+          <div class="home-highlight1">
+            <div class="home-content13">
+              <div class="home-heading13">
+                <h2 class="home-header13">
+                  Excepteur sint occaecat cupidatat non proident
+                </h2>
+                <p class="home-caption12">
+                  Lorem ipsum dolor sit consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt.
+                </p>
+              </div>
+              <button class="button-arrow button">
+                <span class="home-text25">Read more</span>
+                <span class="home-text26">&gt;</span>
+              </button>
+            </div>
+            <div class="home-image2">
+              <img
+                alt="image"
+                src="public/Highlights/highlight-1-1500w.png"
+                class="home-image3"
+              />
+              <div class="home-rectangle"></div>
+            </div>
+          </div>
+          <div class="home-highlight2">
+            <div class="home-image4">
+              <img
+                alt="image"
+                src="public/Highlights/highlight-2-1500w.png"
+                class="home-image5"
+              />
+            </div>
+            <div class="home-content14">
+              <div class="home-heading14">
+                <h2 class="home-header14">
+                  Excepteur sint occaecat cupidatat non proident
+                </h2>
+                <p class="home-caption13">
+                  <span>
+                    Lorem ipsum dolor sit consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt.
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo.
+                  </span>
+                  <br />
+                </p>
+              </div>
+              <button class="home-find1 button">Find a local guide</button>
+            </div>
+          </div>
+        </section>
+        <section id="destinations" class="home-destinations">
+          <div class="home-video-details">
+            <div class="home-heading15">
+              <h2 class="home-header15">Spotlight destinations</h2>
+              <p class="home-caption14">
+                Lorem ipsum dolor sit consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+            </div>
+            <div class="home-video-wrapper">
+              <div class="home-tint2">
+                <img
+                  alt="image"
+                  src="public/Icons/play.svg"
+                  class="home-image6"
+                />
+              </div>
+              <video
+                src=""
+                poster="public/Videos/spotlight-cover1-1500w.png"
+                class="home-video3"
+              ></video>
+            </div>
+          </div>
+          <p class="home-caption15">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto.
           </p>
-
-          <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
-          </p>
+          <div class="home-list1">
+            <a href="index.html" class="home-navlink19">
+              <div class="home-location-wrapper1">
+                <location-wrapper class="location-wrapper">
+                  <!--Location component-->
+                  <div class="location-item">
+                    <img
+                      alt="image"
+                      src="public/Destinations/destination-1-400h.png"
+                      class="location-background"
+                    />
+                    <div class="location-content">
+                      <span class="location-location">
+                        <span>Tokyo, Japan</span>
+                      </span>
+                    </div>
+                  </div>
+                </location-wrapper>
+              </div>
+            </a>
+            <a href="index.html" class="home-navlink20">
+              <div class="home-location-wrapper2">
+                <location-wrapper-1a6v class="location-wrapper-1a6v">
+                  <!--Location component-->
+                  <div class="location-item1">
+                    <img
+                      alt="image"
+                      src="public/Destinations/destination-2-400h.png"
+                      class="location-background1"
+                    />
+                    <div class="location-content1">
+                      <span class="location-location1">
+                        <span>Paris, France</span>
+                      </span>
+                    </div>
+                  </div>
+                </location-wrapper-1a6v>
+              </div>
+            </a>
+            <a href="index.html" class="home-navlink21">
+              <div class="home-location-wrapper3">
+                <location-wrapper-qboz class="location-wrapper-qboz">
+                  <!--Location component-->
+                  <div class="location-item2">
+                    <img
+                      alt="image"
+                      src="public/Destinations/destination-3-400h.png"
+                      class="location-background2"
+                    />
+                    <div class="location-content2">
+                      <span class="location-location2">
+                        <span>Bruges, Belgium</span>
+                      </span>
+                    </div>
+                  </div>
+                </location-wrapper-qboz>
+              </div>
+            </a>
+            <a href="index.html" class="home-navlink22">
+              <div class="home-location-wrapper4">
+                <location-wrapper-5nee class="location-wrapper-5nee">
+                  <!--Location component-->
+                  <div class="location-item3">
+                    <img
+                      alt="image"
+                      src="public/Destinations/destination-4-400h.png"
+                      class="location-background3"
+                    />
+                    <div class="location-content3">
+                      <span class="location-location3">
+                        <span>London, UK</span>
+                      </span>
+                    </div>
+                  </div>
+                </location-wrapper-5nee>
+              </div>
+            </a>
+          </div>
+          <button class="home-find2 button">Find a local guide</button>
         </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+        <section id="guides" class="home-guides">
+          <div class="home-heading16">
+            <h2 class="home-header16">Meet our guides</h2>
+            <p class="home-caption16">
+              Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt.
+            </p>
+          </div>
+          <div class="home-list2">
+            <a href="index.html">
+              <div class="home-guide-wrapper1">
+                <guide-wrapper class="guide-wrapper">
+                  <!--Guide component-->
+                  <div class="guide-guide guide">
+                    <img
+                      alt="image"
+                      src="public/Guides/guide-1.png"
+                      class="guide-portrait"
+                    />
+                    <div class="guide-details">
+                      <h3 class="guide-name"><span>Miura Avaron</span></h3>
+                      <span class="guide-location">
+                        <span>Tokyo, Japan</span>
+                      </span>
+                    </div>
+                  </div>
+                </guide-wrapper>
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
+            </a>
+            <a href="index.html">
+              <div class="home-guide-wrapper2">
+                <guide-wrapper-p1sd
+                  class="guide-wrapper-p1sd"
+                  rootclassname="guideundefined"
+                >
+                  <!--Guide component-->
+                  <div class="guide-guide1 guideroot-class-name2">
+                    <img
+                      alt="image"
+                      src="public/Guides/guide-2.png"
+                      class="guide-portrait1"
+                    />
+                    <div class="guide-details1">
+                      <h3 class="guide-name1"><span>Miura Avaron</span></h3>
+                      <span class="guide-location1">
+                        <span>Paris, France</span>
+                      </span>
+                    </div>
+                  </div>
+                </guide-wrapper-p1sd>
               </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+            </a>
+            <a href="index.html">
+              <div class="home-guide-wrapper3">
+                <guide-wrapper-fetl
+                  class="guide-wrapper-fetl"
+                  rootclassname="guideundefined"
+                >
+                  <!--Guide component-->
+                  <div class="guide-guide2 guideroot-class-name">
+                    <img
+                      alt="image"
+                      src="public/Guides/guide-3.png"
+                      class="guide-portrait2"
+                    />
+                    <div class="guide-details2">
+                      <h3 class="guide-name2"><span>Miura Avaron</span></h3>
+                      <span class="guide-location2">
+                        <span>Bruges, Belgium</span>
+                      </span>
+                    </div>
+                  </div>
+                </guide-wrapper-fetl>
               </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
+            </a>
+            <a href="index.html">
+              <div class="home-guide-wrapper4">
+                <guide-wrapper-v7f6
+                  class="guide-wrapper-v7f6"
+                  rootclassname="guideundefined"
+                >
+                  <!--Guide component-->
+                  <div class="guide-guide3 guideroot-class-name1">
+                    <img
+                      alt="image"
+                      src="public/Guides/guide-4.png"
+                      class="guide-portrait3"
+                    />
+                    <div class="guide-details3">
+                      <h3 class="guide-name3"><span>Miura Avaron</span></h3>
+                      <span class="guide-location3">
+                        <span>London, UK</span>
+                      </span>
+                    </div>
+                  </div>
+                </guide-wrapper-v7f6>
               </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
+            </a>
+          </div>
         </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+        <section class="home-articles">
+          <div id="articles" class="home-content15">
+            <div class="home-heading17">
+              <h2 class="home-header17">
+                Excepteur sint occaecat cupidatat non proident
+              </h2>
+              <p class="home-caption17">
+                Lorem ipsum dolor sit consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
             </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+            <div class="home-list3">
+              <div class="home-row1">
+                <article-wrapper
+                  class="article-wrapper"
+                  rootclassname="articleundefined"
+                >
+                  <!--Article component-->
+                  <div class="article-article articleroot-class-name1">
+                    <img
+                      alt="image"
+                      src="public/Articles/articles-11-1500w.png"
+                      class="article-image"
+                    />
+                    <div class="article-content">
+                      <div class="article-heading">
+                        <h2 class="article-header">
+                          <span>Understand your customers</span>
+                        </h2>
+                        <p class="article-description">
+                          <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum.
+                          </span>
+                        </p>
+                      </div>
+                      <button class="button-arrow button">
+                        <span class="article-text1">Read more</span>
+                        <span class="article-text2">&gt;</span>
+                      </button>
+                    </div>
+                  </div>
+                </article-wrapper>
+                <article-wrapper-57ev
+                  class="article-wrapper-57ev"
+                  rootclassname="articleundefined"
+                >
+                  <!--Article component-->
+                  <div class="article-article1 articleroot-class-name">
+                    <img
+                      alt="image"
+                      src="public/Articles/articles-21-1500w.png"
+                      class="article-image1"
+                    />
+                    <div class="article-content1">
+                      <div class="article-heading1">
+                        <h2 class="article-header1">
+                          <span>Understand your customers</span>
+                        </h2>
+                        <p class="article-description1">
+                          <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                          </span>
+                        </p>
+                      </div>
+                      <button class="button-arrow button">
+                        <span class="article-text3">Read more</span>
+                        <span class="article-text4">&gt;</span>
+                      </button>
+                    </div>
+                  </div>
+                </article-wrapper-57ev>
               </div>
-
+              <div class="home-row2">
+                <article-wrapper-2uj1
+                  class="article-wrapper-2uj1"
+                  rootclassname="articleundefined"
+                >
+                  <!--Article component-->
+                  <div class="article-article2 articleroot-class-name2">
+                    <img
+                      alt="image"
+                      src="public/Articles/articles-31-1500w.png"
+                      class="article-image2"
+                    />
+                    <div class="article-content2">
+                      <div class="article-heading2">
+                        <h2 class="article-header2">
+                          <span>Understand your customers</span>
+                        </h2>
+                        <p class="article-description2">
+                          <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum.
+                          </span>
+                        </p>
+                      </div>
+                      <button class="button-arrow button">
+                        <span class="article-text5">Read more</span>
+                        <span class="article-text6">&gt;</span>
+                      </button>
+                    </div>
+                  </div>
+                </article-wrapper-2uj1>
+                <article-wrapper-1mx8
+                  class="article-wrapper-1mx8"
+                  rootclassname="articleundefined"
+                >
+                  <!--Article component-->
+                  <div class="article-article3 articleroot-class-name3">
+                    <img
+                      alt="image"
+                      src="public/Articles/articles-41-1500w.png"
+                      class="article-image3"
+                    />
+                    <div class="article-content3">
+                      <div class="article-heading3">
+                        <h2 class="article-header3">
+                          <span>Understand your customers</span>
+                        </h2>
+                        <p class="article-description3">
+                          <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                          </span>
+                        </p>
+                      </div>
+                      <button class="button-arrow button">
+                        <span class="article-text7">Read more</span>
+                        <span class="article-text8">&gt;</span>
+                      </button>
+                    </div>
+                  </div>
+                </article-wrapper-1mx8>
+              </div>
+              <div class="home-row3">
+                <button class="home-read-all button-option button">
+                  Read all articles
+                </button>
+              </div>
             </div>
+          </div>
+        </section>
+        <section class="home-faq">
+          <div id="faqs" class="home-content16">
+            <div class="home-heading18">
+              <h2 class="home-header18">Frequently asked questions</h2>
+              <p class="home-caption18">
+                Lorem ipsum dolor sit consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+            </div>
+            <div class="home-accordion1">
+              <div
+                data-role="accordion-container"
+                class="accordion home-element1"
+              >
+                <div class="home-content17">
+                  <span class="home-header19">
+                    Lorem ipsum dolor sit ametetur elit?
+                  </span>
+                  <span data-role="accordion-content" class="home-description1">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo.
+                  </span>
+                </div>
+                <div class="home-icon-container1">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="home-icon25"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="home-icon27"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="home-element2 accordion"
+              >
+                <div class="home-content18">
+                  <span class="home-header20">
+                    Excepteur sint occaecat cupidatat non sunt in culpa qui
+                    officia deserunt mollit anim id est laborum?
+                  </span>
+                  <span data-role="accordion-content" class="home-description2">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo.
+                  </span>
+                </div>
+                <div class="home-icon-container2">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="home-icon29"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="home-icon31"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="home-element3 accordion"
+              >
+                <div class="home-content19">
+                  <span class="home-header21">
+                    Tempor incididunt ut labore et dolore magna aliquat enim ad
+                    minim?
+                  </span>
+                  <span data-role="accordion-content" class="home-description3">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo.
+                  </span>
+                </div>
+                <div class="home-icon-container3">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="home-icon33"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="home-icon35"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="home-element4 accordion"
+              >
+                <div class="home-content20">
+                  <span class="home-header22">
+                    Lorem ipsum dolor sit ametetur elit?
+                  </span>
+                  <span data-role="accordion-content" class="home-description4">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo.
+                  </span>
+                </div>
+                <div class="home-icon-container4">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="home-icon37"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="home-icon39"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="home-element5 accordion"
+              >
+                <div class="home-content21">
+                  <span class="home-header23">
+                    Incididunt ut labore et dolore?
+                  </span>
+                  <span data-role="accordion-content" class="home-description5">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo.
+                  </span>
+                </div>
+                <div class="home-icon-container5">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-closed"
+                    class="home-icon41"
+                  >
+                    <path
+                      d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 1024 1024"
+                    data-role="accordion-icon-open"
+                    class="home-icon43"
+                  >
+                    <path
+                      d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="find" class="home-find3">
+          <div class="home-heading19">
+            <h2 class="home-header24">Find a local guide now</h2>
+            <p class="home-caption19">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+          <button class="home-find4 button">Find a local guide</button>
+        </section>
+        <section class="home-footer">
+          <div class="home-content22">
+            <div class="home-main3">
+              <div class="home-branding">
+                <div class="home-heading20">
+                  <img alt="image" src="public/logo.svg" class="home-image7" />
+                  <p class="home-caption20">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore
+                  </p>
+                </div>
+              </div>
+              <div class="home-links2">
+                <div class="home-items1">
+                  <button class="home-link12 button button-clean">
+                    Find a guide
+                  </button>
+                  <a
+                    href="#destinations"
+                    class="home-link13 button button-clean"
+                  >
+                    Find a tour
+                  </a>
+                  <a
+                    href="#destinations"
+                    class="home-link14 button button-clean"
+                  >
+                    Visit a city
+                  </a>
+                  <a
+                    href="#destinations"
+                    class="home-link15 button button-clean"
+                  >
+                    Visit a country
+                  </a>
+                </div>
+                <div class="home-items2">
+                  <a
+                    href="#how-it-works"
+                    class="home-link16 button button-clean"
+                  >
+                    How it works
+                  </a>
+                  <button class="home-link17 button button-clean">
+                    Cancelation policy
+                  </button>
+                  <button class="home-link18 button button-clean">
+                    Local guides
+                  </button>
+                  <button class="home-link19 button button-clean">
+                    Affiliate
+                  </button>
+                </div>
+                <div class="home-items3">
+                  <button class="home-link20 button button-clean">
+                    About us
+                  </button>
+                  <button class="home-link21 button button-clean">Blog</button>
+                  <button class="home-link22 button button-clean">
+                    Partners
+                  </button>
+                  <button class="home-link23 button button-clean">Faqs</button>
+                  <button class="home-link24 button button-clean">
+                    Careers
+                  </button>
+                </div>
+              </div>
+            </div>
+            <span class="home-copyright">
+              © 2022 Character. All Rights Reserved.
+            </span>
+          </div>
+        </section>
+        <div>
+          <div class="home-container5">
+            <script>
+              function initAccordion() {
+                /*
+                Accordion - Code Embed
+                */
+                const accordionContainers = document.querySelectorAll(
+                  '[data-role='accordion-container']'
+                ); // All accordion containers
+                const accordionContents = document.querySelectorAll(
+                  '[data-role='accordion-content']'
+                ); // All accordion content
+                const accordionIconsClosed = document.querySelectorAll(
+                  '[data-role='accordion-icon-closed']'
+                ); // All accordion closed icons
+                const accordionIconsOpen = document.querySelectorAll(
+                  '[data-role='accordion-icon-open']'
+                ); // All accordion open icons
 
-          </section>
+                accordionContents.forEach((accordionContent) => {
+                  accordionContent.style.display = 'none'; //Hides all accordion contents
+                });
 
+                accordionIconsClosed.forEach((icon) => {
+                  icon.style.display = 'flex';
+                });
+
+                accordionIconsOpen.forEach((icon) => {
+                  icon.style.display = 'none';
+                });
+
+                accordionContainers.forEach((accordionContainer, index) => {
+                  if (accordionContainer.classList.contains('initialised')) {
+                    return;
+                  }
+
+                  accordionContainer.classList.add('initiased');
+
+                  accordionContainer.addEventListener('click', () => {
+                    if (accordionContents[index].style.display === 'flex') {
+                      // If the accordion is already open, close it
+                      accordionContents[index].style.display = 'none';
+                      accordionIconsClosed[index].style.display = 'flex';
+                      accordionIconsOpen[index].style.display = 'none';
+                    } else {
+                      // If the accordion is closed, open it
+                      accordionContents.forEach((accordionContent) => {
+                        accordionContent.style.display = 'none'; //Hides all accordion contents
+                      });
+
+                      accordionIconsClosed.forEach((accordionIcon) => {
+                        accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                      });
+
+                      accordionIconsOpen.forEach((accordionIcon) => {
+                        accordionIcon.style.display = 'none';
+                      });
+
+                      accordionContents[index].style.display = 'flex'; // Shows accordion content
+                      accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                      accordionIconsOpen[index].style.display = 'flex';
+                    }
+                  });
+                });
+              }
+
+              initAccordion();
+            </script>
+          </div>
         </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
+      </div>
     </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
 </html>
